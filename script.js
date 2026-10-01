@@ -175,7 +175,7 @@ function submitForm(event) {
     sendButton.disabled = true;
     sendButton.textContent = "Sending...";
     formStatus.textContent = "Sending your message...";
-    fetch("https://formsubmit.co/ajax/subiyafatima7789@gmail.com", {
+    fetch("https://formsubmit.co/ajax/b909b0299b81ac71af885475d4a3388f", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
