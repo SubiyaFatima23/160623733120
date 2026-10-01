@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subiya Fatima's student portfolio featuring web development, AI projects and technical internships.">
+  <title>Subiya Fatima | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23624ce8'/%3E%3Ctext x='4' y='23' fill='white' font-size='18' font-family='Arial'%3ESF%3C/text%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">Subiya Fatima<span>.</span></a>
+      <div class="nav-controls">
+        <button id="themeButton" class="small-button" type="button" aria-pressed="false">Dark mode</button>
+        <button id="menuButton" class="small-button menu-button" type="button" aria-controls="navLinks" aria-expanded="false">Menu</button>
+      </div>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Internships</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Hi, I'm Subiya.<br><span class="gradient-text">I learn. I build. I explore.</span></h1>
+        <p class="hero-description">Exploring web development and artificial intelligence through practical projects and a curiosity for how things work.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">View my projects</a>
+          <a class="btn btn-outline-secondary" href="#contact">Get in touch</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">MY WORK</p>
+        <h2>Projects I've explored</h2>
+        <p>A mix of web applications, artificial intelligence and space technology.</p>
+      </div>
+      
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter-button active" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" data-filter="Web" aria-pressed="false">Web development</button>
+        <button class="filter-button" data-filter="AI" aria-pressed="false">AI and ML</button>
+        <button class="filter-button" data-filter="Space" aria-pressed="false">Space</button>
+      </div>
+
+      <div id="projectCount" class="count-text" aria-live="polite">Showing 7 projects</div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 project-column" data-category="Web">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-web" aria-hidden="true"><span>01</span><strong>WEB</strong></div>
+            <div class="card-body">
+              <p class="project-type">Web project</p>
+              <h3>CGPA and SGPA Calculator</h3>
+              <p>Calculate GPA using credits and grades. Add or delete subject rows to calculate academic results.</p>
+              <p class="technology">HTML, CSS, JavaScript</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="Web">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-web" aria-hidden="true"><span>02</span><strong>WEB</strong></div>
+            <div class="card-body">
+              <p class="project-type">Web project</p>
+              <h3>Responsive E commerce Website</h3>
+              <p>A responsive shopping interface with product categories, search and a shopping cart UI.</p>
+              <p class="technology">HTML, CSS, Bootstrap</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="Web">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-web" aria-hidden="true"><span>03</span><strong>WEB</strong></div>
+            <div class="card-body">
+              <p class="project-type">Web project</p>
+              <h3>To Do List Application</h3>
+              <p>A task manager with add, edit and delete options. Browser local storage keeps tasks between visits.</p>
+              <p class="technology">JavaScript, Local Storage</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="AI">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-ai" aria-hidden="true"><span>04</span><strong>AI</strong></div>
+            <div class="card-body">
+              <p class="project-type">AI project</p>
+              <h3>Image Caption Generator</h3>
+              <p>An image captioning project using the Flickr8k dataset, CNN feature extraction and an LSTM caption decoder.</p>
+              <p class="technology">Python, CNN, LSTM</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="Web">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-web" aria-hidden="true"><span>05</span><strong>WEB</strong></div>
+            <div class="card-body">
+              <p class="project-type">Web project</p>
+              <h3>Placement Portal</h3>
+              <p>A project focused on organising placement information and making recruitment details easier for students to access.</p>
+              <p class="technology">Student web project</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="Web">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-web" aria-hidden="true"><span>06</span><strong>WEB</strong></div>
+            <div class="card-body">
+              <p class="project-type">Web project</p>
+              <h3>Expense Tracker</h3>
+              <p>A project focused on recording expenses and helping users review their spending in a simple interface.</p>
+              <p class="technology">Personal finance project</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-column" data-category="Space">
+          <article class="card project-card h-100">
+            <div class="project-cover cover-space" aria-hidden="true"><span>07</span><strong>SPACE</strong></div>
+            <div class="card-body">
+              <p class="project-type">Space project</p>
+              <h3>Rocket Design</h3>
+              <p>An academic project exploring rocket components, basic design principles and flight stability.</p>
+              <p class="technology">Rocketry</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section tinted-section">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Learning through building</h2>
+            <p>I am a Computer Science Engineering student at Stanley College of Engineering and Technology, Hyderabad. I enjoy problem solving and applying programming concepts to practical projects.</p>
+            <p>My interests include web development, machine learning and artificial intelligence. I value clear communication, teamwork and learning new tools.</p>
+          </div>
+          <div class="col-lg-7">
+            <h3>Technical skills</h3>
+            <div id="skillsList" class="skills-grid"></div>
+            <h3 class="mt-4">Education</h3>
+            <div class="table-responsive">
+              <table class="table education-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Qualification</th>
+                    <th scope="col">Institution</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">B.E. CSE</th>
+                    <td>Stanley College</td>
+                    <td>2023–2027</td>
+                    <td>9.65 CGPA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Intermediate MPC</th>
+                    <td>St. Ann's Junior College</td>
+                    <td>2021–2023</td>
+                    <td>9.85 / 10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">SSC</th>
+                    <td>Kakatiya Vidhya Niketan</td>
+                    <td>2020–2021</td>
+                    <td>10 / 10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">EXPERIENCE</p>
+        <h2>Internships and training</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="experience-card h-100">
+            <p class="project-type">May-June 2026</p>
+            <h3>India Space Lab</h3>
+            <p class="role">Summer internship and technical training</p>
+            <p>Training in drone technology, CanSat and CubeSat systems, rocketry, remote sensing and GIS, and disaster management.</p>
+            <ul>
+              <li>PID Controller Tuning and Autonomous Navigation project.</li>
+              <li>Heat Wave Response study.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="experience-card h-100">
+            <p class="project-type">April-May</p>
+            <h3>Pantech Solutions × SVNIT</h3>
+            <p class="role">Industry integrated internship program</p>
+            <p>Participated in structured technical training and practical project development through a program in collaboration with Sardar Vallabhbhai National Institute of Technology.</p>
+            <p>Focused on applying concepts through project work and preparing portfolio deliverables.</p>
+          </article>
+        </div>
+      </div>
+      <div class="achievements">
+        <h3>Workshops and certifications</h3>
+        <ul>
+          <li>Machine Learning and Deep Learning workshop — Stanley College of Engineering and Technology.</li>
+          <li>College workshops on emerging technologies and programming fundamentals.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section tinted-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">CONTACT</p>
+            <h2>Let's connect</h2>
+            <p>Have a question about my projects or an opportunity to learn together? Send me a message.</p>
+            <address>
+              <a href="mailto:subiyafatima7789@gmail.com">subiyafatima7789@gmail.com</a><br>
+              Hyderabad, Telangana, India
+            </address>
+            <p class="contact-note">Messages are processed by FormSubmit to reach my inbox.</p>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" action="https://formsubmit.co/subiyafatima7789@gmail.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New portfolio message">
+              <div class="mb-3">
+                <label class="form-label" for="name">Your name</label>
+                <input class="form-control" id="name" name="name" autocomplete="name" required minlength="2" maxlength="100" aria-describedby="nameError">
+                <p id="nameError" class="field-error"></p>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">Your email</label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="emailError">
+                <p id="emailError" class="field-error"></p>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" maxlength="3000" aria-describedby="messageError"></textarea>
+                <p id="messageError" class="field-error"></p>
+              </div>
+              <button id="sendButton" class="btn btn-primary" type="submit">Send message</button>
+              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Subiya Fatima</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
